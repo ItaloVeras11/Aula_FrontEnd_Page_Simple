@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+    *{
+
+        box-sizing: border-box;
+    }
+    body {
+
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+
+        background-color: orange;
+        padding: 60px;
+        text-align: center;
+        color: white;
+    }
+
+    nav {
+
+        display: flex;
+        background-color: #333333;
+    }
+
+    nav a {
+
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+
+    }
+
+    nav a:hover{
+
+        color: #333333;
+        background-color: white;
+    }
+
+    .row {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    aside {
+        height: 100vh;
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+
+    main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+
+    }
+
+    .fakeimg {
+        width: 100%;
+        background-color: #aaaaaa;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        background-color: royalblue;
+        text-align: center;
+        color: white;
+        padding: 40px;
+    }
+
+    @media (max-width: 700px) {
+        nav {
+            flex-direction: column;
+        }
+
+        .row{
+
+            flex-direction: column;
+        }
+
+    }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Blog Programe.io</h1>
+        <p>Muita Tecnologia e informaçao na sua Mao</p>
+    </header>
+
+    <nav>
+
+        <a href="index.html">Inicio</a>
+        <a href="">Pagina 02</a>
+        <a href="">Pagina 03</a>
+        <a href="">Pagina 04</a>
+
+    </nav>
+
+    <div class="row">
+
+        <aside>
+
+            <h2>Biografia</h2>
+            <h5>Foto</h5>
+            <div class="fakeimg">Image</div>
+            <p>Descricao...</p>
+
+            <h3>Galeria</h3>
+            <div class="fakeimg">Image</div>
+            <div class="fakeimg">Image</div>
+            <div class="fakeimg">Image</div>
+
+        </aside>
+
+        <main>
+
+            <article>
+                <h2>Titulo Da Postagem</h2>
+                <h5>Italo Veras, 13 junho 2023</h5>
+                <div class="fakeimg">Image</div>
+
+                <p>Resulmo...</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Vitae asperiores voluptates deleniti magni nobis deserunt 
+                    officiis consequuntur, vel eum accusantium maiores facilis 
+                    suscipit minima repellendus modi, natus iure fuga alias!</p>
+            </article>
+
+            <article>
+                <h2>Titulo Da Postagem</h2>
+                <h5>Italo Veras, 13 junho 2023</h5>
+                <div class="fakeimg">Image</div>
+
+                <p>Resulmo...</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Vitae asperiores voluptates deleniti magni nobis deserunt 
+                    officiis consequuntur, vel eum accusantium maiores facilis 
+                    suscipit minima repellendus modi, natus iure fuga alias!</p>
+            </article>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>CopyRyght - Programr.io Todos os Direitos Autorais</p>
+    </footer>
+
+</body>
+</html>
